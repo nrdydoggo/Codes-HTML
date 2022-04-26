@@ -1,0 +1,115 @@
+<!DOCTYPE = html>
+<html lang = "ko">
+<head>
+    <meta http-equiv = "X-UA-Compatible" content = "IE-Edge">
+    <meta charset = "UTF-8">
+    <title>Address Tag</title>
+    <style>
+        #address
+        {
+            font-style: italic;
+        }
+        h1
+        {
+            text-align: center;
+        }
+        h4
+        {
+            margin-bottom: 2%;
+        }
+        #sec01, #sec02, #sec03
+        {
+            text-align: left;
+            margin-left: 150px;
+        }
+        #title
+        {
+            font-weight: bold;
+            margin-left: 150px;
+            margin-bottom: -30px;
+        }
+        #addrID
+        {
+            margin-bottom: 0%;
+        }
+        a:any-link
+        {
+            color: green;
+            text-decoration: none;
+        }
+        h6
+        {
+            font-size: 0.35em;
+        }
+    </style>
+</head>
+<body> 
+    <h1><strong>[Address 태그의 사용법]</strong></h1>
+    <br>
+    <br>
+    <!------------------------------------>
+    <h4><p id = "title">정의 및 특징</p></h4>
+    <br>
+    <!------------------------------------>
+    <div id = "sec01">
+    <strong id = "address">address</strong> 태그는 문서나 글의 저자 또는 
+    회사와 연락할 수 있는 정보를 명시할 때 사용합니다.
+    <br>
+    <br>
+    <br>
+    </div>
+    <!------------------------------------>
+    <div id = "sec02">
+    <strong id = "address">body</strong> 요소 안에 존재하는 
+    <strong id = "address">address</strong> 요소는 해당 문서의 
+    연락 정보를 나타내며,<br><strong id = "address">article</strong>
+    요소 안에 존재하는 <strong id = "address">address</strong> 요소는 
+    해당 글에 대한 연락 정보를 나타냅니다.
+    <br>
+    <br>
+    <br>
+    이러한 <strong id = "address">address</strong> 요소의 텍스트는 주로 
+    이탤릭체(italic)로 표현되며, 대부분의 브라우저들은
+    <br>
+    <strong id = "address">address</strong> 요소의 위쪽과 아래쪽에 
+    약간의 공백을 자동으로 삽입하여 다른 텍스트와 구분합니다.
+    </div>
+    <br>
+    <br>
+    <!------------------------------------>
+    <div id = "sec03">
+        <strong id = "addrID">[주소]</strong>
+        <h6>Addr 시작</h6>
+        <address> 
+            <div id = "addr">
+                <a href = "https://cutt.ly/KGfOWWn" target = "_blank">
+                    경상남도 부산광역시 해운대구 해운동 38길 22
+                </a>
+            </div>
+        </address>
+        <h6>Addr 종료</h6>
+        <strong id = "addrID">[이메일]</strong>
+        <h6>Addr 시작</h6>
+        <address>
+            <div id = "mail">
+                <a href = "mailto:kedit33n@bethesda.net">
+                    kedit33n@bethesda.net
+                </a>
+            </div>
+        </address>
+        <h6>Addr 종료</h6>
+        <strong id = "addrID">[연락처]</strong>
+        <h6>Addr 시작</h6>
+        <address>    
+            <div id = "phone">
+                <a href = "tel: +821014453388">
+                    010-1445-3388
+                </a>
+            </div>
+            <h6>각 연락처들을 클릭하면 바로가기가 가능합니다.</h6>
+        </address>
+        <h6>Addr 종료</h6>
+    </div>
+    </address>
+</body>
+</html>
