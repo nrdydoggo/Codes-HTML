@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang = "ko">
+    <head>
+        <meta charset = "UTF-8">
+        <meta http-equiv = "X-UA-Compatible" content = "IE-Edge">
+        <link rel = "stylesheet" href = "resources/AudioPlayer.css">
+        <title>Music Player with Playlist</title>
+        <script src = "https://code.jquery.com/jquery-3.6.0.js"></script>
+        <style>
+          #playlist
+          {
+            list-style: decimal;
+            background-repeat: no-repeat;
+          }
+          /* 세부 요소에 접근할 땐 반드시 상세히 기재한다 */
+          #playlist>li>a
+          {
+            text-decoration: none;
+            color: gray;
+            font-weight: bold;
+          }
+        </style>
+    </head>
+    <body>
+      <audio src = "" controls autoplay id = "PlayerFunction">
+        현재 사용하시는 브라우저에서는 HTML5를 지원하지 않습니다.
+      </audio>
+          <ul id = playlist>
+                <li class = "current-song">
+                  <a href = "https://github.com/knksrp60/Resources/raw/main/Every%20Breath%20You%20Take.mp3">Every Breath You Take</a>
+                </li>
+                <li>
+                  <a href = "https://github.com/knksrp60/Resources/raw/main/Everyone%20Is%20Horrid%20Except%20Me%20(And%20Possibly%20You).mp3">Everyone Is Horrid Except Me</a>
+                </li>
+                <li>
+                    <a href = "https://github.com/knksrp60/Resources/raw/main/Shippuden.mp3">疾風伝</a>
+                </li>
+                <li>
+                  <a href = "https://github.com/knksrp60/Resources/raw/main/DAGOTHWAVE.mp3">DAGOTHWAVE</a>
+                </li>
+          </ul>
+<script>        
+PlayerFunction();
+var i;
+function PlayerFunction()
+{
+$("#PlayerFunction")[0].src = $("#playlist li a")[0];       
+$("#playlist li a").click(function(e)
+    {
+    // 음악 링크를 클릭했을 때 원본 소스 링크로 이동하는 것을 방지
+    e.preventDefault();
+    // 링크를 클릭하면 해당 곡이 플레이어에서 재생되게함(인덱스 값은 건드리지 말 것)
+    $("#PlayerFunction")[0].src = this;
+    });
+}  
+</script>  
+    </body>
+</html>
